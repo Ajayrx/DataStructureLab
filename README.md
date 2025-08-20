@@ -166,5 +166,5 @@
 
 <div align="center">
   <p>💡 <b>Pro Tip:</b> Add sample inputs/outputs inside each file as comments for faster revision.</p>
-  <p>🖤 Made for DSA labs — <code>gcc</code>, <code>make</code>, debug, repeat!</p>
+  <p>🖤 Made for DS labs — Code, debug, repeat!</p>
 </div>
