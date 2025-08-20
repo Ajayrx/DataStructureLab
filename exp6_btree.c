@@ -229,7 +229,7 @@ int main()
 
     // Deletes node 50 which has two children
 
-    deletedNode = deleteNode(root, 70);
+    deletedNode = deleteNode(root, 50);
     printf("\nBinary search tree after deleting node 50: \n");
     inorderTraversal(root);
 

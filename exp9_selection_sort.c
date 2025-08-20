@@ -1,5 +1,3 @@
-// Aim of the Experiment : Write a C program to perform Selection Sort.  - okay error exists test error
-
 #include <stdio.h>
 
 void SelSort(int array[], int n);
@@ -7,21 +5,36 @@ void SelSort(int array[], int n);
 int main()
 {
     int array[100], n, i;
-    printf("Enter number of elements n:");
+
+    printf("Enter number of elements: ");
     scanf("%d", &n);
-    printf("Enter %d Numbers n:", n);
+
+    printf("Enter %d numbers: ", n);
     for (i = 0; i < n; i++)
+    {
         scanf("%d", &array[i]);
+    }
+
     SelSort(array, n);
+
+    printf("Sorted Array is: ");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+
     return 0;
 }
 
 void SelSort(int array[], int n)
 {
     int i, j, position, swap;
-    for (i = 0; i < (n - 1); i++)
+
+    for (i = 0; i < n - 1; i++)
     {
         position = i;
+
         for (j = i + 1; j < n; j++)
         {
             if (array[position] > array[j])
@@ -32,10 +45,7 @@ void SelSort(int array[], int n)
         {
             swap = array[i];
             array[i] = array[position];
-            printf("Sorted Array is:\n");
             array[position] = swap;
         }
     }
-    for (i = 0; i < n; i++)
-        printf("%d\n", array[i]);
 }
